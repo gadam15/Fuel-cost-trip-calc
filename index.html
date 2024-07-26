@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Usage Cost</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="flex">
+        <div class="main">
+            <h1>Fuel Cost Calculator</h1>
+            <form>
+                <div class="calculator">
+                    <div class="type">
+                        <label for="distanceKm">Trip distance:</label><br>
+                        <label for="fuelUsage">Fuel usage</label><br>
+                        <label for="fuelPrice">Fuel price:</label><br>
+                        <label for="numberOfPeople">Passangers:</label><br>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" id="distanceKm" placeholder="km" min="0"><br>
+                        <input type="number" id="fuelUsage" placeholder="L/100km" min="0"><br>
+                        <input type="number" id="fuelPrice" placeholder="zł" min="0"><br>
+                        <input type="number" id="numberOfPeople" value="1" min="1"><br>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <input type="button" id="calculateBtn" value="Calculate">
+                    <input type="reset" value="Reset" id="reset">
+                </div>
+            </form>
+            <p id="resultP">Result here</p>
+        </div>
+    </div>
+    <div><p class="botton">Credits: <img src="logo.jpg" alt="logo" width="14px" height="14px"> gadam15 </p> </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
